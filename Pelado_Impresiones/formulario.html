@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="bg-secondary bg-gradient">
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0" href="index.html">
+            <img src="./media/img/peladoimpresiones 75x55.png" alt="LOGO Pelado Impresiones"> <span class="align-middle">PELADO IMPRESIONES</span>
+          </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active border-end" aria-current="page" href="index.html"><i class="bi bi-house"></i> Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-end" href="#"><i class="bi bi-house-check-fill"></i> Destacados</a>
+        </li>
+        <!-- Menu persiana alquileres-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle border-end" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-house-up-fill"></i> Alquileres
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-house-heart-fill"></i> Casas</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-building"></i> Apartamentos</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-campground"></i> Terrenos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-campground"></i> Otros</a></li>
+          </ul>
+        </li>
+        <!-- Menu persiana ventas-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle border-end" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-house-up-fill"></i> Ventas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-house-heart-fill"></i> Casas</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-building"></i> Apartamentos</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-campground"></i> Terrenos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-campground"></i> Otros</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-nav text-light"><a class="nav-link" href="https://www.tiktok.com/@urquizapropiedades" target="_blank"><i class="fa-brands fa-tiktok"></i> </a></div>
+          
+      <div class="navbar-nav text-light"><a class="nav-link" href="https://www.facebook.com/nicolas.urquiza.12382" target="_blank"><i class="fa-brands fa-facebook"></i> </a></div>
+        
+      <div class="navbar-nav text-light"><a class="nav-link" href="https://www.instagram.com/urquizapropiedades08/" target="_blank"><i class="fa-brands fa-instagram"></i> </a></div>
+          
+      <div class="navbar-nav text-light"><a class="nav-link" href="https://www.threads.com/@urquizapropiedades08?hl=es-la" target="_blank"><i class="bi bi-threads"></i> </a></div>
+          
+         <div class="navbar-nav text-light"><a class="nav-link" href=""><i class="bi bi-file-person"></i> Sobre Nosotros</a></div>
+        <div class="navbar-nav text-light"><a class="nav-link" href="formulario.html"><i class="bi bi-chat-right-text"></i> Contactanos</a></div>
+  
+    </div>
+
+    </nav>
+    <main class="container mt-3">
+        <!--LAYOUT 2 COLUMNAS-->
+        <div class="row">
+            <div class="col text-bg-light mb-3">
+                <p class="fs-3">Feedback</p>
+                <!--INICIO FORMULARIO-->
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                        <div class="invalid-feedback">
+                            Your username is required.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                          Please enter a valid email address for shipping updates.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="address" placeholder="Donde vivis amigo" required="">
+                        <div class="invalid-feedback">
+                          Please enter your shipping address.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address2" class="form-label">Dirección 2 <span class="text-body-secondary">(Opcional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Si tenes otra casa valor">
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="country" class="form-label">Situacion</label>
+                        <select class="form-select" id="country" required="">
+                          <option value="">Elige...</option>
+                          <option>Propietario</option>
+                          <option>Arrendador</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="state" class="form-label">Categoría</label>
+                        <select class="form-select" id="state" required="">
+                          <option value="">Elige...</option>
+                          <option>Consulta</option>
+                          <option>Reclamo</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please provide a valid state.
+                        </div>
+                      </div>
+          
+                    </div>
+          
+                    <hr class="my-4">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Explícate</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+
+                    <button class="w-100 btn btn-primary btn-lg mb-3" type="submit">Enviar</button>
+                  </form>
+                <!--FIN FORMULARIO-->
+            </div>
+            <div class="col">
+                <!--INICIO PEQUEÑO TEXTO CON IMAGEN-->
+                <div class="card text-bg-dark">
+                    <img src="./media/img/peladoimpresiones.jpg" class="card-img-top" alt="tu opinion">
+                    <div class="card-body">
+                      <h5 class="card-title">Tu opinión es importante</h5>
+                      <p class="card-text">A ver que te jode de la impresiones.</p>
+                </div>
+                <!--FIN PEQUEÑO TEXTO CON IMAGEN-->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

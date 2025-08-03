@@ -1,0 +1,19 @@
+.muyPequenyo{
+    font-size: .8em;
+}
+
+.sticky{
+    position: sticky;
+}
+
+#carouselExampleRide{
+    margin-top: 116px;
+}
+
+.destacados {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #FF3131;
+  color: #3A51A1;
+  border-radius: 5px;
+}
